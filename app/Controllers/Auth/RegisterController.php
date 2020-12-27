@@ -38,8 +38,7 @@ class RegisterController extends Controller{
             'username' => $_POST['username'],
             'password' => $_POST['password'],
             're-password' => $_POST['re-password'],
-            'email' => filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL),
-            'date' => $_POST['date']
+            'email' => filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL)
         ];
     }
 

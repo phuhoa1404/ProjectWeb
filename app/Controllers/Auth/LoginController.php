@@ -40,7 +40,7 @@ use App\Controllers\Controller;
             }else if(Session::login($user,$userInfo)){
                 redirect('home');
             }else{
-                $errors['password'] = 'Mật khẩu không chính xác';
+                $errors['password'] = 'Mật khẩu không chính xác!!';
                 //echo $errors['password'];
                 //echo "<script type='text/javascript'>alert('$errors');</script>";       
             }

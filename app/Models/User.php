@@ -31,12 +31,11 @@ class User
                 //echo "Tài khoản đã tồn tại";
             
             }else {
-                $sql = $db->prepare('insert into account (username,password,email,fname,dob) values (:name,:pwd,:mail,:fname,:dob)');
+                $sql = $db->prepare('insert into account (username,password,email,fname) values (:name,:pwd,:mail,:fname)');
                 $sql->bindParam(':name', $data['username']);
                 $sql->bindParam(':pwd', $data['password']);
                 $sql->bindParam(':mail', $data['email']);
                 $sql->bindParam(':fname', $data['hovaten']);
-                $sql->bindParam(':dob', $data['dob']);
                 $sql->execute();
                 $messages['success'] = 'Tạo tài khoản thành công';
                 redirect('register',['messages' => $messages]);

@@ -21,7 +21,7 @@
     Macaw::error('\App\Controllers\HomeController@notFound');
 
     //test
-    Macaw::get('test','App\Controllers\test@someMethod');
+    Macaw::get('test','\App\Controllers\HomeController@test');
     Macaw::dispatch();
     ob_end_flush();
 ?>
