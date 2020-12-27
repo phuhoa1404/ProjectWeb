@@ -1,0 +1,62 @@
+.mainform{
+    margin: 0 auto;
+    width: 500px;
+    padding: 10px;
+}
+#tab li:hover{
+    background-color: cadetblue;
+}
+label{
+    font-weight: lighter;
+}
+#reverse{
+    font-size: 20px;
+}
+#places{
+    width: 200px;
+    height: 30px;
+}
+td{
+    padding-right: 20px;
+    padding-bottom: 7px;
+}
+#day{
+    width: 80px;
+    height: 30px;
+}
+#month{
+    width: 116px;
+    height: 30px;
+}
+#amount{
+    width: 80px;
+    height: 30px;
+}
+.name{
+    font-style: normal;
+    font-weight: bold;
+}
+.note{
+    font-style: italic;
+}
+#submit{
+    float: right;
+    width: 200px;
+    height: 50px;
+}
+.result{
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+}
+
+.contact{
+    margin: 0 auto;
+    width: 80%;
+}
+ul li{
+    list-style: none;
+}
+.confirm-success{
+    text-align: center;
+}
